@@ -1,4 +1,6 @@
-document.getElementById('generate-button').addEventListener('click', function () {
+document.getElementById('generate-button').addEventListener('click', show);
+
+function show() {
     const showContainer = document.getElementById('show-container');
     const paragraph = document.getElementById('paragraph').checked;
     const wordCount = getValue('word-count');
@@ -15,5 +17,6 @@ document.getElementById('generate-button').addEventListener('click', function ()
             showContainer.appendChild(p);
         })
     }
+}
 
-})
+show();

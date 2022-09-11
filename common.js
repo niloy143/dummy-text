@@ -33,7 +33,7 @@ const word = () => {
 const generate = (l, p) => {
 
     if (l > 1000000 || l < 1 || !l) {
-        l = 200;
+        l = 500;
     }
 
     let container = [];
