@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Text Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-300">
+    <h1 class="text-5xl text-center text-slate-700 font-semibold font-mono my-10">Dummy Text Generator</h1>
+    <input class="block mx-auto py-2 px-3 outline-none rounded my-2" type="number" id="word-count" placeholder="How many words?">
+    <div class="flex justify-center gap-1 mb-1">
+        <input type="radio" id="paragraph" onclick="toggle(this)">
+        <label for="paragraph">Paragraph</label>
+    </div>
+    <button class="block mx-auto bg-slate-700 text-slate-100 px-5 py-2 rounded active:border"
+        id="generate-button">Generate</button>
+    <div class="w-1/2 mx-auto text-justify my-5" id="show-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam velit exercitationem consequuntur
+            excepturi eius officia, nisi odit accusamus voluptatibus minima beatae in! Cum fugit sapiente adipisci
+            perferendis provident illum repellendus ducimus aut iusto doloribus minima molestiae amet cupiditate
+            blanditiis magnam necessitatibus animi deleniti, dolore iure! Deserunt voluptates explicabo eligendi
+            deleniti.</p>
+    </div>
+
+    <script src="common.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
